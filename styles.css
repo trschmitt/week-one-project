@@ -25,9 +25,12 @@ Input Border Bottom (Focus): #967343
 */
 
 style{
-  font-family: 'Merriweather',serif;
-  font-family: 'Roboto' serif;
+  font-family: 'Merriweather', serif;
+  font-family: 'Roboto' , serif;
+  line-height: 1.8;
 }
-
+body{
+  font-family: 'Merriweather' , serif;
+}
   /*background-size: cover;*/
   /*background-position: right bottom;*/
