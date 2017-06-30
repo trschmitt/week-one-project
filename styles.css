@@ -24,4 +24,7 @@ Input Border Bottom: #968772
 Input Border Bottom (Focus): #967343
 */
 
-style
+style{
+  font-family: 'Merriweather',serif;
+  font-family: 'Roboto' serif;
+}
