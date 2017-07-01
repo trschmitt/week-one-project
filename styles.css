@@ -8,7 +8,7 @@ font-family: 'Bellefair', serif;
 
 Colors
 
-Background: #F2F1E8
+Background:
 Text: #131511
 Inline Link: #968772
 Inline Link (Hover): #967343
@@ -27,10 +27,20 @@ Input Border Bottom (Focus): #967343
 style{
   font-family: 'Merriweather', serif;
   font-family: 'Roboto' , serif;
-  line-height: 1.8;
 }
+
 body{
   font-family: 'Merriweather' , serif;
+  line-height: 1.6;
+  margin: 0;
+  background-color: #F2F1E8;
+  background-attachment: fixed;
+  color: #131511;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+  font-family: 'Merriweather', serif;
 }
   /*background-size: cover;*/
   /*background-position: right bottom;*/
