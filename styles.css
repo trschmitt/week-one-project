@@ -8,7 +8,7 @@ font-family: 'Bellefair', serif;
 
 Colors
 
-Background:
+Background: #F2F1E8
 Text: #131511
 Inline Link: #968772
 Inline Link (Hover): #967343
@@ -46,17 +46,42 @@ h1, h2, h3, h4 {
 #site-header {
   background-color: #FFFFFF;
   padding: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
 }
 
+#site-header img {
+  display: flex;
+  height: 60px;
+  justify-content: flex-start;
+  flex-shrink: 1;
+  flex-grow: 0
+}
+
 #main-navigation a {
   padding: 10px;
   font-size: 20px;
+  color: #2B2F26;
+  /*display: flex;*/
+}
+
+
+#main-title {
+  font-size: 30px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+#main-title h3 {
+  font-size: 25px;
 }
 
 main {
@@ -69,8 +94,12 @@ main {
   flex-flow: wrap;
   flex-shrink: 1;
 }
+
 ul li img {
-  flex-basis: 33%;
+  display: flex;
+  flex-basis: 300px;
+  height: 250px;
+  padding: 10px;
 }
   /*background-size: cover;*/
   /*background-position: right bottom;*/
