@@ -42,5 +42,35 @@ h1, h2, h3, h4 {
   font-weight: bold;
   font-family: 'Merriweather', serif;
 }
+
+#site-header {
+  background-color: #FFFFFF;
+  padding: 10px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+#main-navigation a {
+  padding: 10px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+main {
+  margin: 20px, auto;
+}
+
+.products{
+  list-style: none;
+  display: flex;
+  flex-flow: wrap;
+  flex-shrink: 1;
+}
+ul li img {
+  flex-basis: 33%;
+}
   /*background-size: cover;*/
   /*background-position: right bottom;*/
