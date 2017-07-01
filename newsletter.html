@@ -6,21 +6,38 @@
     <title>Bent Creek Ceramics - Newsletter</title>
   </head>
   <body>
-    <header id="site-header">
-      <img src="images/bent-creek-logo-coral.png" alt="Logo">
-      <nav id="main-navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="newsletter.html">Newsletter</a>
-      </nav>
-    </header>
-    <main>
-      <h2>Sign Up for Our Weekly Newsletter</h2>
-      <h3>Stay up to date with events, activities, news and specials.</h3>
-      <p>Name</p>
-      <p>Email</p>
-      <input type="submit" value="Submit">
-    </main>
+    <div class="wrapper">
+      <header id="site-header">
+        <img src="images/bent-creek-logo-coral.png" alt="Logo">
+        <nav id="main-navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="newsletter.html">Newsletter</a>
+        </nav>
+      </header>
+      <main id="newsletter-text">
+        <h2>Sign Up for Our Weekly Newsletter</h2>
+        <h3>Stay up to date with events, activities, news and specials.</h3>
+        <p id="nameInput">Name</p>
+        <p id="emailInput">Email</p>
+        <p id="signupButton">Signup</p>
+      </main>
+        <script type="text/javascript">
+        var nameInput = document.getElementById('nameInput');
+        var emailInput = document.getElementById('emailInput');
+        var signupButton = document.getElementById('signupButton');
+        signupButton.addEventListener('click', function(e) {
+          var nameVal = nameInput.value;
+          var emailVal = emailInput.value;
+          if (nameVal && emailVal) {
+            alert('Thanks for signing up, ' + nameVal + '. Newsletters will be sent to ' + emailVal);
+            nameInput.value = "";
+            emailInput.value = "";
+          } else {
+            alert('We would love for you to sign up, please provide both your name and email address.');
+          }
+        });
+      </script>
+    </div>
   </body>
-  <footer>Copyright 2017, Bent Creek Ceramics</footer>
 </html>
