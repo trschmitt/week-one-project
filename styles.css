@@ -74,3 +74,11 @@ ul li img {
 }
   /*background-size: cover;*/
   /*background-position: right bottom;*/
+
+  footer {
+    color: #FFFFFF;
+    background-color: #968772;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
