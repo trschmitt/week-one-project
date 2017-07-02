@@ -142,6 +142,19 @@ ul li p {
   flex-direction: column;
   background-color: #F2F1E8;
 }
+
+/*Use to format the text over the image (includes the buttons and selections.) have to change colors ant margins and such but here is a good layout*/
+
+/*form{
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 8px rgba( 0, 0, 0, 0.4 );
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+}*/
+
 /*NEWSLETTER CSS END*/
 
 /*ABOUT SECTION CSS START*/
