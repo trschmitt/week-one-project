@@ -24,27 +24,29 @@ Input Border Bottom: #968772
 Input Border Bottom (Focus): #967343
 */
 
-style{
+style {
   font-family: 'Merriweather', serif;
-  font-family: 'Roboto' , serif;
+  font-family: 'Roboto', serif;
 }
 
-body{
-  font-family: 'Merriweather' , serif;
+body {
+  font-family: 'Merriweather', serif;
   line-height: 1.6;
-  margin: 0;
-  background-color: #F2F1E8;
+  background-color: #f2f1e8;
   background-attachment: fixed;
   color: #131511;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: bold;
   font-family: 'Merriweather', serif;
 }
 
 #site-header {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 10px;
   position: fixed;
   top: 0;
@@ -53,7 +55,7 @@ h1, h2, h3, h4 {
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
-  box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.1 );
+  box-shadow: -5px 5px 8px rgba(0, 0, 0, 0.1);
 }
 
 #site-header img {
@@ -61,21 +63,20 @@ h1, h2, h3, h4 {
   height: 60px;
   justify-content: flex-start;
   flex-shrink: 1;
-  flex-grow: 0
+  flex-grow: 0;
 }
 
 #main-navigation a {
   padding: 10px;
   font-size: 20px;
   text-transform: uppercase;
-  color: #2B2F26;
+  color: #2b2f26;
   /*display: flex;*/
 }
 
 #main_navigation {
   width: 400px;
 }
-
 
 #main-title {
   font-size: 30px;
@@ -84,7 +85,6 @@ h1, h2, h3, h4 {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-
 }
 
 #main-title h3 {
@@ -95,7 +95,7 @@ main {
   margin: 20px, auto;
 }
 
-.products{
+.products {
   list-style: none;
   display: flex;
   flex-basis: 70%;
@@ -122,7 +122,7 @@ ul li img {
 
 ul li p {
   background-color: #968772;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 10px;
   margin-right: 100px;
   text-align: center;
@@ -144,7 +144,7 @@ ul li p {
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
-  background-color: #F2F1E8;
+  background-color: #f2f1e8;
 }
 
 /*Use to format the text over the image (includes the buttons and selections.) have to change colors ant margins and such but here is a good layout*/
@@ -163,7 +163,6 @@ ul li p {
 
 /*ABOUT SECTION CSS START*/
 
-
 #about-body {
   width: 1000px;
   margin: 50px auto;
@@ -177,17 +176,16 @@ ul li p {
 }
 
 main > section > img {
-
 }
 
-  /*background-size: cover;*/
-  /*background-position: right bottom;*/
-  /*ABOUT SECTION CSS END*/
+/*background-size: cover;*/
+/*background-position: right bottom;*/
+/*ABOUT SECTION CSS END*/
 
-  footer {
-    color: #FFFFFF;
-    background-color: #968772;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-  }
+footer {
+  color: #ffffff;
+  background-color: #968772;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
