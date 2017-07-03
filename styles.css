@@ -72,6 +72,10 @@ h1, h2, h3, h4 {
   /*display: flex;*/
 }
 
+#main_navigation {
+  width: 400px;
+}
+
 
 #main-title {
   font-size: 30px;
