@@ -24,6 +24,7 @@ Input Border Bottom: #968772
 Input Border Bottom (Focus): #967343
 */
 
+
 style {
   font-family: 'Merriweather', serif;
   font-family: 'Roboto', serif;
@@ -33,8 +34,11 @@ body {
   font-family: 'Merriweather', serif;
   line-height: 1.6;
   background-color: #f2f1e8;
-  background-attachment: fixed;
   color: #131511;
+  max-width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 h1,
@@ -48,14 +52,12 @@ h4 {
 #site-header {
   background-color: #ffffff;
   padding: 10px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
+  position: sticky;
+  top: 0px;
   display: flex;
-  flex-grow: 1;
   justify-content: space-between;
   box-shadow: -5px 5px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 
 #site-header img {
@@ -74,13 +76,21 @@ h4 {
   /*display: flex;*/
 }
 
+#main_navigation a:hover {
+  color: #CD5D67;
+}
+
+#main_navigation a:active {
+  color: #968772;
+}
+
 #main_navigation {
-  width: 400px;
+  width: 100%;
 }
 
 #main-title {
   font-size: 30px;
-  margin: 40px auto;
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -92,72 +102,65 @@ h4 {
 }
 
 main {
-  margin: 20px, auto;
+  margin: 0
 }
 
-.products {
-  list-style: none;
-  display: flex;
-  flex-basis: 70%;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-flow: wrap;
-  justify-content: space-around;
-  align-content: center;
-}
-
-/*ul .first-image {
-  height: 300px;
-  width: 400px;
+.index-body {
   display: flex;
   flex-direction: column;
+}
+
+#first-row {
+  list-style: none;
+  display: flex;
+  /*flex-basis: 70%;*/
+  flex-flow: wrap;
+  align-content: center;
+
+}
+#second-row {
+  list-style: none;
+  display: flex;
+  flex-flow: wrap;
+}
+
+#first-image {
+  display: flex;
   flex-grow: 1;
-}*/
+}
 
 ul li img {
-  display: flex;
   height: 250px;
   /*flex-flow: wrap;*/
 }
 
-ul li p {
+ul li > p {
   background-color: #968772;
   color: #ffffff;
   padding: 10px;
-  margin-right: 100px;
   text-align: center;
   position: relative;
   bottom: 70px;
 }
 
 /*NEWSLETTER CSS START*/
-
-.wrapper {
+#newsletter-body {
   background-image: url(images/background-2.jpg);
-  height: 100%;
+  margin: 0;
 }
 
 #newsletter-text {
-  width: 1000px;
   margin: 80px auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
   background-color: #f2f1e8;
+  background: white;
+  padding: 40px 100px;
+  border-radius: 5px;
+  box-shadow: 0 5px 8px rgba( 0, 0, 0, 0.4 );
+  text-align: center;
+  width: 400px;
 }
 
 /*Use to format the text over the image (includes the buttons and selections.) have to change colors ant margins and such but here is a good layout*/
-
-/*form{
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 5px 8px rgba( 0, 0, 0, 0.4 );
-    text-align: center;
-    width: 300px;
-    margin: 0 auto;
-}*/
 
 /*NEWSLETTER CSS END*/
 
@@ -175,8 +178,6 @@ ul li p {
   font-size: 70px;
 }
 
-main > section > img {
-}
 
 /*background-size: cover;*/
 /*background-position: right bottom;*/
@@ -186,6 +187,8 @@ footer {
   color: #ffffff;
   background-color: #968772;
   padding: 20px;
+  margin: 0;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
