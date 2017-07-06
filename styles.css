@@ -166,8 +166,7 @@ ul li > p {
 /*ABOUT SECTION CSS START*/
 
 #about-body {
-  width: 1000px;
-  margin: 50px auto;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -177,6 +176,16 @@ ul li > p {
   font-size: 70px;
 }
 
+#image-section {
+  display: flex;
+}
+
+#image-section .wilson-quote {
+}
+
+#aside-image {
+  height: 10%;
+}
 
 /*background-size: cover;*/
 /*background-position: right bottom;*/
