@@ -113,31 +113,30 @@ main {
 #first-row {
   list-style: none;
   display: flex;
-  /*flex-basis: 70%;*/
   flex-flow: wrap;
-  align-content: center;
+  justify-content: space-around;
 
 }
+
+#first-row > li > img{
+  height: 350px;
+}
+
 #second-row {
   list-style: none;
   display: flex;
   flex-flow: wrap;
+  margin: 0;
+  justify-content: space-around;
 }
-
-#first-image {
-  display: flex;
-  flex-grow: 1;
-}
-
-ul li img {
-  height: 250px;
-  /*flex-flow: wrap;*/
+#second-row > li > img{
+  height: 200px;
 }
 
 ul li > p {
   background-color: #968772;
   color: #ffffff;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   position: relative;
   bottom: 70px;
